@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealBook.Web", "MealBook.Web\MealBook.Web.csproj", "{D1ADD310-E787-42DF-87B3-FFF035243810}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{E3468288-5D0C-4038-ACB4-ED788EEC151A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1ADD310-E787-42DF-87B3-FFF035243810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1ADD310-E787-42DF-87B3-FFF035243810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1ADD310-E787-42DF-87B3-FFF035243810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1ADD310-E787-42DF-87B3-FFF035243810}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1ADD310-E787-42DF-87B3-FFF035243810} = {E3468288-5D0C-4038-ACB4-ED788EEC151A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24ADE796-4AD4-4D8B-BF79-EE2FA40E437F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿@model MealBook.Web.Models.Meal
+
+@{
+    ViewData["Title"] = "Muffinki czekoladowe";
+}
+
+<h4>
+     Autor: @Html.DisplayFor(model => model.Author.Name)
+</h4>
+
+<hr />
+
+<h1>
+    @Html.DisplayFor(model => model.Name)
+</h1>
+
+<br/>
+
+<h3>Składniki:</h3>
+
+<ul>
+    @foreach (var item in Model.Ingredients)
+    {
+        <li>
+            @Html.DisplayFor(modelItem => item.Name) @Html.DisplayFor(modelItem => item.Quantity) @Html.DisplayFor(itemModel => item.Unit)
+        </li>
+    }
+</ul>
+
+<hr/>
+
+<h3>Przygotowanie:</h3>
+
+<p>
+    Czas: <b>@Html.DisplayFor(model => model.Time) min.</b>
+</p>
+
+<p>
+    @Html.DisplayFor(model => model.Description)
+</p>
+
+<hr />

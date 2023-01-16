@@ -1,0 +1,67 @@
+﻿@model MealBook.Web.Models.Ingredient
+
+@{
+    ViewData["Title"] = "Kalkulator kuchenny";
+}
+
+<style>
+    select
+    {
+        padding: 5px;
+    }
+
+    table, td, th
+    {   
+        border: solid 1px black;
+        border-collapse: collapse;        
+        text-align: center;
+    }
+
+    td, th
+    {
+        padding: 3px 10px 3px 10px;        
+    }
+
+    input
+    {
+        width: 100px;
+    }
+</style>
+
+<h1>Kalkulator kuchenny</h1>
+
+<hr />
+
+<form asp-action="Index">
+    <h6>Składnik:</h6>
+    <p>
+        <select asp-for="Id">
+            <option value="1">Mąka pszenna</option>
+            <option value="2">Mąka żytnia</option>
+            <option value="3">Cukier kryształ</option>
+            <option value="4">Cukier puder</option>
+            <option value="5">Kakao</option>
+        </select>
+    </p>    
+
+    <p>
+        <input type="submit" value="Oblicz" class="btn btn-primary" />
+    </p>    
+</form>
+
+<hr />
+
+<h6>Zmiana jednostek ojętości na masę.</h6>
+
+<p>
+    <table>
+        <tr>
+            <th>Szklanka</th><th>Łyżka stołowa</th><th>Łyżekczka</th>
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(model => Model.Glass)g</td>
+            <td>@Html.DisplayFor(model => Model.Tablespoon)g</td>
+            <td>@Html.DisplayFor(model => Model.Spoon)g</td>
+        </tr>
+    </table>
+</p>
