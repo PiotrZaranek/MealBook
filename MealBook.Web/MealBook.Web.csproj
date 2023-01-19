@@ -16,4 +16,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MealBook.Application\MealBook.Application.csproj" />
+    <ProjectReference Include="..\MealBook.Infrastructure\MealBook.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
