@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using MealBook.Domain.Model;
 using System.Reflection.Metadata.Ecma335;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore.Design.Internal;
 
 namespace MealBook.Infrastructure
 {
@@ -55,5 +57,8 @@ namespace MealBook.Infrastructure
                 .WithMany(i => i.MealIngredniet)
                 .HasForeignKey(k => k.IngredientId);
         }
+
+        
+
     }
 }
