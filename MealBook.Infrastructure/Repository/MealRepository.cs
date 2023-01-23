@@ -39,7 +39,9 @@ namespace MealBook.Infrastructure.Repository
 
         public IQueryable<Meal> ListMeals()
         {
-            var meals = _context.Meals;
+            var meals = from i in _context.Meals
+                        select i;
+
             return meals;
         }
 
